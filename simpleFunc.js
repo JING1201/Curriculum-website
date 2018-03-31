@@ -1,11 +1,4 @@
-function countDown()
-{
-	document.getElementById("countDownButton").innerHTML = document.getElementById("countDownButton").innerHTML - (-1);
-}
-function countUp()
-{
-	document.getElementById("countDownButton").innerHTML = document.getElementById("countDownButton").innerHTML - (1);
-}
+
 function mouseOn()
 {
 	//console.log(event.currentTarget.getAttributeNS(null, "transform").slice(7,-1).split(' '));
