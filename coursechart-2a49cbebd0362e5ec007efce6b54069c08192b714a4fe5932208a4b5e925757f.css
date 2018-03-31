@@ -1,0 +1,23 @@
+.course{stroke:#ccc;stroke-width:1}
+.highlight{stroke:#000;stroke-width:2}
+.edge{stroke:#ccc;stroke-width:1}
+.recommended{stroke-dasharray:5}
+.required{stroke-dasharray:0}
+.prereq{stroke-width:2}
+.post{stroke-width:2}
+.nodes{cursor:pointer;}
+.legendText{fill:black;font-size:"12px"}
+.draggable{cursor: move;}
+.nodes:hover
+{
+ 	
+} 
+/*.nodes:hover circle 
+{
+    stroke:#000;stroke-width:2;opacity: 0.2;
+	transition: opacity .25s ease-in-out;
+}*/
+.courseNames
+{
+	fill:"black";font-size:"12px"
+}
