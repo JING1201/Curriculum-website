@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UF Eta Kappa Nu (HKN), Mu Chapter</title>
+    <link rel="stylesheet" media="screen" href="application-1db7b2a4bd827f06cb1e25c579f03425af8bdf3c593c122da3f01ecf24d63af9.css">
+    <link rel="stylesheet" media="print" href="print-94c7a0a623e4c8846c2e5fee9525d2a9e42a62329ff3f7e0422b7150fec30447.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-148e573171d1f46d780cf316be1efcf6f2bc6df9b2fc92395ecf92e76282b2fb.ico">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="8NyijzOh6DDwtPJLx0mhG4gJ3kSZwtPxn8vL0WCe9oKxyJjDAPIZf6vN5qcVMHkcQVkXNuGCf7t0EfgHsbcUFw==">
+    <link href="cyrillic.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" src="ga.js"></script>
+    <script src="application-3a2d9a0a360219e365202a1c546848490c46666f9dea16dd46d2cded0193aef0.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery-ui-timepicker-addon.min.js"></script>
+    <script src="simpleFunc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="coursechart-c27d5215be01235ba4737a917fea35fa199e498b4e38c254b7a2d7d31ceac87f.js"></script>
+    <link rel="stylesheet" media="all" href="coursechart-2a49cbebd0362e5ec007efce6b54069c08192b714a4fe5932208a4b5e925757f.css">
+    <script src="coursechart-c27d5215be01235ba4737a917fea35fa199e498b4e38c254b7a2d7d31ceac87f.js"></script>
+
+
+    <meta name="google-site-verification" content="J_Vtxbv72xOD7F9XtcIhbAB3lcYexZ_jjg33Hvc3zxw">
+</head>
+
+<body>
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="jquery.easing.compatibility.js"></script>
+    <div id="wrapper">
+        <div id="header">
+            <div id="navigation">
+                <span class="userbar"><a href="/login">Log In</a> | <a href="/register">Register</a></span>
+                <span id="username" style="display:none;">guest</span>
+                <ul>
+                    <li><a class="navigation_toplevel_item current" id="services" href="#">Student Services</a></li>
+                    <li><a class="navigation_toplevel_item" id="indrel" href="#">Industry Relations</a></li>
+                    <li><a class="navigation_toplevel_item" id="events" href="#">Events</a></li>
+                    <li><a class="navigation_toplevel_item" id="service" href="#">Service</a></li>
+                    <li><a class="navigation_toplevel_item" id="alumni" href="#">Alumni</a></li>
+                    <li><a class="navigation_toplevel_item" id="about" href="#">About HKN</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="lower">
+                <div id="submenu-thin">
+                    <div class="submenu services_submenu" style="display: block;">
+                        <ul class="plain">
+                            <li><a href="/tutor/">Tutoring Hours</a></li>
+                            <li><a href="/tutor/calendar">Review Sessions</a></li>
+                            <li><a href="/exams/">Exam Archive</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/coursesurveys">Course Surveys</a></li>
+                            <li><a href="/courseguides">Course Guide</a></li>
+                            <li><a href="/dept_tour">Department Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu indrel_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/indrel">Why HKN?</a></li>
+                            <li><a href="/indrel/resume-books">Resume Books</a></li>
+                            <li><a href="/indrel/infosessions">Infosessions</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/indrel/career-fair">Career Fair</a></li>
+                            <li><a href="/indrel/contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu events_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/events/calendar">Events Calendar</a></li>
+                            <li><a href="/events/future">Upcoming Events</a></li>
+                            <li><a href="/events/past">Past Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu service_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/service">Service</a></li>
+                            <li><a href="/service/junioreecsday">Junior EECS Day</a></li>
+                            <li><a href="/service/makerworkshops">Maker Workshops</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/service/eecsday">EECS Day</a></li>
+                            <li><a href="/service/bearhacks">Bearhacks</a></li>
+                            <li><a href="/service/caldayworkshops">Cal Day Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu alumni_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/alumnis/new">Alumni Contact Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu about_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/about/contact/" class="navigation_sublevel_item">Contact Information</a></li>
+                            <li><a class="navigation_sublevel_item" href="https://www.flickr.com/photos/berkeley_hkn/">Photo Gallery</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/yearbook/">Yearbooks</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/about/slideshow/" class="navigation_sublevel_item">Slideshows</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/officers">Current Officers</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/cmembers">Current Committee Members</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="logo">
+                    <a href="/">
+                <img alt="Eta Kappa Nu, Mu Chapter" src="cok.png">
+</a> </div>
+                <div id="submenu">
+                    <div class="submenu services_submenu" style="display: block;">
+                        <ul class="plain">
+                            <li><a href="/tutor/">Tutoring Hours</a></li>
+                            <li><a href="/tutor/calendar">Review Sessions</a></li>
+                            <li><a href="/exams/">Exam Archive</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/coursesurveys">Course Surveys</a></li>
+                            <li><a href="/courseguides">Course Guide</a></li>
+                            <li><a href="/dept_tour">Department Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu indrel_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/indrel">Why HKN?</a></li>
+                            <li><a href="/indrel/resume-books">Resume Books</a></li>
+                            <li><a href="/indrel/infosessions">Infosessions</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/indrel/career-fair">Career Fair</a></li>
+                            <li><a href="/indrel/contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu events_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/events/calendar">Events Calendar</a></li>
+                            <li><a href="/events/future">Upcoming Events</a></li>
+                            <li><a href="/events/past">Past Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu service_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/service">Service</a></li>
+                            <li><a href="/service/junioreecsday">Junior EECS Day</a></li>
+                            <li><a href="/service/makerworkshops">Maker Workshops</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/service/eecsday">EECS Day</a></li>
+                            <li><a href="/service/bearhacks">Bearhacks</a></li>
+                            <li><a href="/service/caldayworkshops">Cal Day Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu alumni_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/alumnis/new">Alumni Contact Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu about_submenu" style="display: none;">
+                        <ul class="plain">
+                            <li><a href="/about/contact/" class="navigation_sublevel_item">Contact Information</a></li>
+                            <li><a class="navigation_sublevel_item" href="https://www.flickr.com/photos/berkeley_hkn/">Photo Gallery</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/yearbook/">Yearbooks</a></li>
+                        </ul>
+                        <ul class="plain">
+                            <li><a href="/about/slideshow/" class="navigation_sublevel_item">Slideshows</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/officers">Current Officers</a></li>
+                            <li><a class="navigation_sublevel_item" href="/about/cmembers">Current Committee Members</a></li>
+                        </ul>
+                    </div>
+                    control
+                </div>
+                <div id="topbar">
+                    <div id="searcharea">
+                        <div id="examfiles" class="search">
+                            <form action="/exams/search" accept-charset="UTF-8" method="get">
+                                <input name="utf8" type="hidden" value="✓" disabled="disabled">
+                                <input type="text" name="q" id="examfiles_q" value="" placeholder="Search Exams" class="text autoclear">
+                                <input type="submit" value="Search">
+                            </form>
+                            <div class="small searchhelp">
+                                example: CS 61a, ee 20, cs 188
+                            </div>
+                        </div>
+                        <div id="coursesurvey" class="searchcontrol">
+                            <form action="/coursesurveys/search" accept-charset="UTF-8" method="get">
+                                <input name="utf8" type="hidden" value="✓" disabled="disabled">
+                                <input type="text" name="q" id="coursesurvey_q" value="" class="text" placeholder="Search Course Surveys">
+                                <input type="submit" value="Search">
+                            </form>
+                            <div class="small searchhelp">
+                                example: Hilfinger, hilf*, cs 61a
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="container">
+                <div id="main">
+                    <h1>Course Guides</h1>
+                    <p>
+                        We offer a comprehensive course guide for all undergraduate level EECS courses here.
+                    </p>
+                    <h2>Prerequisite Charts</h2>
+                    <p>(Click on a course in the chart below to see the relevant course guide)</p>
+                    <noscript>
+                        &lt;map id="eemap14" name="eemap14"&gt; &lt;area id="ee20" alt="" title="" href="/courseguides/EE/20" shape="rect" coords="146,179,303,264" style="outline:none;" target="_self" /&gt; &lt;area id="ee40" alt="" title="" href="/courseguides/EE/40" shape="rect" coords="543,186,678,263" style="outline:none;" target="_self" /&gt; &lt;area id="ee126" alt="" title="" href="/courseguides/EE/126" shape="rect" coords="33,310,114,387" style="outline:none;" target="_self" /&gt; &lt;area id="ee144" alt="" title="" href="/courseguides/EE/144" shape="rect" coords="308,305,382,374" style="outline:none;" target="_self" /&gt; &lt;area id="cs70" alt="" title="" href="/courseguides/CS/70" shape="rect" coords="376,261,437,288" style="outline:none;" target="_self" /&gt; &lt;area id="cs61c" alt="" title="" href="/courseguides/CS/61C" shape="rect" coords="428,293,505,318" style="outline:none;" target="_self" /&gt; &lt;area id="ee105" alt="" title="" href="/courseguides/EE/105" shape="rect" coords="454,332,553,408" style="outline:none;" target="_self" /&gt; &lt;area id="ee117" alt="" title="" href="/courseguides/EE/117" shape="rect" coords="697,259,795,324" style="outline:none;" target="_self" /&gt; &lt;area id="ee130" alt="" title="" href="/courseguides/EE/130" shape="rect" coords="699,343,780,411" style="outline:none;" target="_self" /&gt; &lt;area id="ee134" alt="" title="" href="/courseguides/EE/134" shape="rect" coords="693,433,778,495" style="outline:none;" target="_self" /&gt; &lt;area id="ee113" alt="" title="" href="/courseguides/EE/113" shape="rect" coords="403,453,499,515" style="outline:none;" target="_self" /&gt; &lt;area id="ee149" alt="" title="" href="/courseguides/EE/149" shape="rect" coords="298,390,388,452" style="outline:none;" target="_self" /&gt; &lt;area id="ee120" alt="" title="" href="/courseguides/EE/120" shape="rect" coords="189,462,269,524" style="outline:none;" target="_self" /&gt; &lt;area id="ee145b" alt="" title="" href="/courseguides/EE/145B" shape="rect" coords="67,480,147,542" style="outline:none;" target="_self" /&gt; &lt;area id="ee121" alt="" title="" href="/courseguides/EE/121" shape="rect" coords="17,562,112,634" style="outline:none;" target="_self" /&gt; &lt;area id="eec145o" alt="" title="" href="/courseguides/EE/145O" shape="rect" coords="314,505,398,564" style="outline:none;" target="_self" /&gt; &lt;area id="ee142" alt="" title="" href="/courseguides/EE/142" shape="rect" coords="289,596,384,669" style="outline:none;" target="_self" /&gt; &lt;area id="ee140" alt="" title="" href="/courseguides/EE/140" shape="rect" coords="463,537,544,603" style="outline:none;" target="_self" /&gt; &lt;area id="ee123" alt="" title="" href="/courseguides/EE/123" shape="rect" coords="45,644,131,710" style="outline:none;" target="_self" /&gt; &lt;area id="eec125" alt="" title="" href="/courseguides/EE/125" shape="rect" coords="60,717,146,774" style="outline:none;" target="_self" /&gt; &lt;area id="eec128" alt="" title="" href="/courseguides/EE/128" shape="rect" coords="64,797,142,867" style="outline:none;" target="_self" /&gt; &lt;area id="ee192" alt="" title="" href="/courseguides/EE/192" shape="rect" coords="248,710,326,776" style="outline:none;" target="_self" /&gt; &lt;area id="cs61b" alt="" title="" href="/courseguides/CS/61B" shape="rect" coords="400,715,475,740" style="outline:none;" target="_self" /&gt; &lt;area id="ee143" alt="" title="" href="/courseguides/EE/143" shape="rect" coords="675,510,769,570" style="outline:none;" target="_self" /&gt; &lt;area id="eec145l" alt="" title="" href="/courseguides/EE/145L" shape="rect" coords="670,589,752,649" style="outline:none;" target="_self" /&gt; &lt;area id="eec145m" alt="" title="" href="/courseguides/EE/145M" shape="rect" coords="653,669,741,732" style="outline:none;" target="_self" /&gt; &lt;area id="ee137a" alt="" title="" href="/courseguides/EE/137A" shape="rect" coords="578,718,653,784" style="outline:none;" target="_self" /&gt; &lt;area id="ee137b" alt="" title="" href="/courseguides/EE/137B" shape="rect" coords="577,843,652,912" style="outline:none;" target="_self" /&gt; &lt;area id="ee122" alt="" title="" href="/courseguides/EE/122" shape="rect" coords="459,763,554,826" style="outline:none;" target="_self" /&gt; &lt;area id="ee119" alt="" title="" href="/courseguides/EE/119" shape="rect" coords="421,836,499,905" style="outline:none;" target="_self" /&gt; &lt;area id="ee147" alt="" title="" href="/courseguides/EE/147" shape="rect" coords="275,821,360,885" style="outline:none;" target="_self" /&gt; &lt;area id="ee127a" alt="" title="" href="/courseguides/EE/127A" shape="rect" coords="153,857,230,918" style="outline:none;" target="_self" /&gt; &lt;/map&gt; &lt;img alt="Electrical Engineering Courses" usemap="#eemap14" src="/assets/site/ee-prereq-chart-f2e2ec9ed93d40ff85895475e1be8608d9a0ef4bef1520a663dd011bcc2ac663.png" /&gt; &lt;br&gt; &lt;map id="csmap14" name="csmap14"&gt; &lt;area id="CS61A" alt="" title="CS61A" href="/courseguides/CS/61A" shape="rect" coords="327,175,489,250" style="outline:none;" target="_self" /&gt; &lt;area id="CS61b" alt="" title="CS61B" href="/courseguides/CS/61B" shape="rect" coords="218,281,321,356" style="outline:none;" target="_self" /&gt; &lt;area id="CS61C" alt="" title="CS61C" href="/courseguides/CS/61C" shape="rect" coords="506,292,639,353" style="outline:none;" target="_self" /&gt; &lt;area id="CS188" alt="" title="CS188" href="/courseguides/CS/188" shape="rect" coords="59,354,140,415" style="outline:none;" target="_self" /&gt; &lt;area id="CS162" alt="" title="CS162" href="/courseguides/CS/162" shape="rect" coords="364,379,445,440" style="outline:none;" target="_self" /&gt; &lt;area id="CS152" alt="" title="" href="/courseguides/CS/152" shape="rect" coords="705,355,786,416" style="outline:none;" target="_self" /&gt; &lt;area id="CS184" alt="" title="" href="/courseguides/CS/184" shape="rect" coords="93,468,170,529" style="outline:none;" target="_self" /&gt; &lt;area id="CS160" alt="" title="" href="/courseguides/CS/160" shape="rect" coords="232,468,309,529" style="outline:none;" target="_self" /&gt; &lt;area id="CS164" alt="" title="" href="/courseguides/CS/164" shape="rect" coords="366,451,451,530" style="outline:none;" target="_self" /&gt; &lt;area id="CS161" alt="" title="" href="/courseguides/CS/161" shape="rect" coords="534,462,619,529" style="outline:none;" target="_self" /&gt; &lt;area id="CS150" alt="" title="" href="/courseguides/CS/150" shape="rect" coords="681,469,769,533" style="outline:none;" target="_self" /&gt; &lt;area id="CS189" alt="" title="" href="/courseguides/CS/189" shape="rect" coords="5,558,82,622" style="outline:none;" target="_self" /&gt; &lt;area id="CS170" alt="" title="" href="/courseguides/CS/170" shape="rect" coords="157,563,234,627" style="outline:none;" target="_self" /&gt; &lt;area id="CS169" alt="" title="" href="/courseguides/CS/169" shape="rect" coords="370,544,447,608" style="outline:none;" target="_self" /&gt; &lt;area id="CS186" alt="" title="" href="/courseguides/CS/186" shape="rect" coords="369,616,446,680" style="outline:none;" target="_self" /&gt; &lt;area id="EEC149" alt="" title="" href="/courseguides/EE/149" shape="rect" coords="625,550,702,614" style="outline:none;" target="_self" /&gt; &lt;area id="CS172" alt="" title="" href="/courseguides/CS/172" shape="rect" coords="27,652,111,716" style="outline:none;" target="_self" /&gt; &lt;area id="CS174" alt="" title="" href="/courseguides/CS/174" shape="rect" coords="64,743,152,823" style="outline:none;" target="_self" /&gt; &lt;area id="CS176" alt="" title="" href="/courseguides/CS/176" shape="rect" coords="174,803,258,874" style="outline:none;" target="_self" /&gt; &lt;area id="CS70" alt="" title="" href="/courseguides/CS/70" shape="rect" coords="348,820,480,891" style="outline:none;" target="_self" /&gt; &lt;area id="CS191" alt="" title="" href="/courseguides/CS/191" shape="rect" coords="639,804,720,875" style="outline:none;" target="_self" /&gt; &lt;area id="EE192" alt="" title="" href="/courseguides/EE/192" shape="rect" coords="691,714,772,739" style="outline:none;" target="_self" /&gt; &lt;area id="EE141" alt="" title="" href="/courseguides/EE/141" shape="rect" coords="728,674,800,707" style="outline:none;" target="_self" /&gt; &lt;/map&gt; &lt;img alt="Computer Science Courses" usemap="#csmap14" src="/assets/site/cs-prereq-chart-1c975d69690cb4ccdf222509d628d9f1b9ce6df6e8978eb8a5826a905896769a.png" /&gt;
+                    </noscript>
+                    <br>
+                    <h1>EE Course Map</h1>
+                    <div id="ee">
+                        <button>click-me, I am useless tho lel</button>
+                        <button id="countDo" onclick = "drawGCircle()">draw a circle</button>
+                        <svg height="700" width="922">
+                            <circle></circle>
+                            <script type="text/ecmascript"> <![CDATA[
+                              var selectedElement = 0;
+                              var currentX = 0;
+                              var currentY = 0;
+                              var currentMatrix = 0;
+
+                              function selectElement(evt) {
+                                selectedElement = evt.target.parentElement;
+                                currentX = evt.clientX;
+                                currentY = evt.clientY;
+                                currentMatrix = selectedElement.getAttributeNS(null, "transform").slice(7,-1).split(' ');
+
+                                selectedElement.setAttributeNS(null, "onmousemove", "moveElement(evt)");
+                                selectedElement.setAttributeNS(null, "onmouseout", "deselectElement(evt)");
+                                selectedElement.setAttributeNS(null, "onmouseup", "deselectElement(evt)");
+                              }
+                            ]]> </script>
+                            <line class="edge required" marker-end="url(#end)" x1="391.33221100344804" y1="160.73707074462425" x2="458.41014166516027" y2="173.41450213415274" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="402.53829726740616" y2="326.567742968745" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="361.22103644727963" y2="258.6866330120715" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="330.3710467343729" y2="551.6988110263386" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="208.18823542928465" y2="261.33071768845736" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="188.39937777946818" y2="394.34895472853117" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="641.087627203545" y2="284.9734617478254" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="498.58189027455177" y2="261.4010670129473" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="799.2036401242334" y2="305.7779993926663" opacity="1"></line>
+                            <line class="edge recommended" marker-end="url(#end)" x1="672.6979509663498" y1="307.8161286589078" x2="796.3636455923837" y2="317.60744237128836" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="733.3734455829104" y2="264.54363900333266" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="750.5502530302979" y2="348.38745864184074" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="495.4869521019516" y2="383.7326002382186" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="495.2478998409415" y1="422.7318675905229" x2="491.69138633747673" y2="595.5324168415809" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="672.6979509663498" y1="307.8161286589078" x2="673.0535484212722" y2="434.5984649862982" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="672.6979509663498" y1="307.8161286589078" x2="533.5425279288587" y2="460.03245273893805" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="676.3994933597766" y2="575.3926621264029" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="673.162934685907" y1="473.59831158401073" x2="687.1010890378464" y2="572.2720901863916" opacity="1"></line>
+                            <line class="edge recommended" marker-end="url(#end)" x1="499.4752957150049" y1="300.39083267932403" x2="671.961188397482" y2="577.7698777728709" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="496.7317358520912" y1="180.6571134706929" x2="783.447078670551" y2="429.75997174173136" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="327.4236458489028" y1="278.1477837678915" x2="295.03535855519317" y2="399.9355450243734" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="381.3862251783914" y1="359.3334238916424" x2="315.28234934631064" y2="413.03465453867517" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="327.4236458489028" y1="278.1477837678915" x2="354.16616431186833" y2="426.8236627877307" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="327.4236458489028" y1="278.1477837678915" x2="181.00207166366158" y2="594.995724319482" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="327.4236458489028" y1="278.1477837678915" x2="109.44907378755519" y2="418.26689091097785" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="76.64260640716884" y1="439.35564853250804" x2="106.75079438640871" y2="463.9570409093613" opacity="1"></line>
+                            <defs>
+                                <marker id="end" viewBox="0 -5 10 10" refX="0" refY="0" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+                                    <path d="M0,-5L10,0L0,5"></path>
+                                </marker>
+                            </defs>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="16A" cx="391.3170337894212" cy="160.7667239130353" style="fill: rgb(0,255, 0);" class="course"></circle>
+                                <text class="courseNames" id="16A" text-anchor="middle" transform="translate(391.3170337894212,160.7667239130353)" opacity="1">16A</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="16B" cx="496.7138568981793" cy="180.68680664702356" style="fill: rgb(0, 255, 0);" class="course"></circle>
+                                <text class="courseNames" id="16B" text-anchor="middle" transform="translate(496.7138568981793,180.68680664702356)" opacity="1">16B</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="126" cx="381.35380833922954" cy="359.3887977089688" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="126" text-anchor="middle" transform="translate(381.35380833922954,359.3887977089688)" opacity="1">126</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="120" cx="327.3982154129025" cy="278.20541872692405" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="120" text-anchor="middle" transform="translate(327.3982154129025,278.20541872692405)" opacity="1">120</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="145B" cx="314.3964171831088" cy="587.3419399434304" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="145B" text-anchor="middle" transform="translate(314.3964171831088,587.3419399434304)" opacity="1">145B</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="144" cx="170.5432569827797" cy="271.89276634466444" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="144" text-anchor="middle" transform="translate(170.5432569827797,271.89276634466444)" opacity="1">144</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="149" cx="156.26689443756484" cy="416.62947229319417" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="149" text-anchor="middle" transform="translate(156.26689443756484,416.62947229319417)" opacity="1">149</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="105" cx="672.7554440712905" cy="307.8589185800966" style="fill: rgb(255, 241, 118);" class="course"></circle>
+                                <text class="courseNames" id="105" text-anchor="middle" transform="translate(672.7554440712905,307.8589185800966)" opacity="1">105</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="117" cx="499.4560439763913" cy="300.4373379678588" style="fill: rgb(159, 168, 218);" class="course"></circle>
+                                <text class="courseNames" id="117" text-anchor="middle" transform="translate(499.4560439763913,300.4373379678588)" opacity="1">117</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="130" cx="835.2853867920434" cy="320.72201051051" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="130" text-anchor="middle" transform="translate(835.2853867920434,320.72201051051)" opacity="1">130</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="134" cx="770.2081842009567" cy="277.63207766161173" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="134" text-anchor="middle" transform="translate(770.2081842009567,277.63207766161173)" opacity="1">134</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="143" cx="783.1571379897714" cy="369.90079486783264" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="143" text-anchor="middle" transform="translate(783.1571379897714,369.90079486783264)" opacity="1">143</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="145L" cx="107.9694412974977" cy="301.3374068597535" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="145L" text-anchor="middle" transform="translate(107.9694412974977,301.3374068597535)" opacity="1">145L</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="137A" cx="495.22575968617184" cy="422.79388037853676" style="fill: rgb(159, 168, 218);" class="course"></circle>
+                                <text class="courseNames" id="137A" text-anchor="middle" transform="translate(495.22575968617184,422.79388037853676)" opacity="1">137A</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="137B" cx="490.87391812188685" cy="634.5569211124498" style="fill: rgb(159, 168, 218);" class="course"></circle>
+                                <text class="courseNames" id="137B" text-anchor="middle" transform="translate(490.87391812188685,634.5569211124498)" opacity="1">137B</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="140" cx="673.1951768172643" cy="473.63487252127806" style="fill: rgb(255, 241, 118);" class="course"></circle>
+                                <text class="courseNames" id="140" text-anchor="middle" transform="translate(673.1951768172643,473.63487252127806)" opacity="1">140</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="113" cx="507.2048184102406" cy="488.8458208644821" style="fill: rgb(159, 168, 218);" class="course"></circle>
+                                <text class="courseNames" id="113" text-anchor="middle" transform="translate(507.2048184102406,488.8458208644821)" opacity="1">113</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="142" cx="692.5784177624059" cy="610.933323365511" style="fill: rgb(255, 241, 118);" class="course"></circle>
+                                <text class="courseNames" id="142" text-anchor="middle" transform="translate(692.5784177624059,610.933323365511)" opacity="1">142</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="118" cx="573.9548230977704" cy="611.739519175164" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="118" text-anchor="middle" transform="translate(573.9548230977704,611.739519175164)" opacity="1">118</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="122" cx="384.1558100856636" cy="611.6070126573394" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="122" text-anchor="middle" transform="translate(384.1558100856636,611.6070126573394)" opacity="1">122</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="127" cx="334.1824744702001" cy="669.9159429291617" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="127" text-anchor="middle" transform="translate(334.1824744702001,669.9159429291617)" opacity="1">127</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="147" cx="812.9422103105688" cy="455.345714249375" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="147" text-anchor="middle" transform="translate(812.9422103105688,455.345714249375)" opacity="1">147</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="121" cx="284.98284535093" cy="437.6800742567411" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="121" text-anchor="middle" transform="translate(284.98284535093,437.6800742567411)" opacity="1">121</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="123" cx="361.02807880185605" cy="465.24843298429164" style="fill: rgb(255, 0, 0);" class="course"></circle>
+                                <text class="courseNames" id="123" text-anchor="middle" transform="translate(361.02807880185605,465.24843298429164)" opacity="1">123</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="128" cx="104.97665777613761" cy="595.107329424739" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="128" text-anchor="middle" transform="translate(104.97665777613761,595.107329424739)" opacity="1">128</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="192" cx="164.5594689395595" cy="630.4331374577121" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="192" text-anchor="middle" transform="translate(164.5594689395595,630.4331374577121)" opacity="1">192</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="C106A" cx="76.60425703524596" cy="439.4093433419458" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="C106A" text-anchor="middle" transform="translate(76.60425703524596,439.4093433419458)" opacity="1">C106A</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="C106B" cx="136.88261308892086" cy="488.6627720149245" style="fill: rgb(255, 204, 128);" class="course"></circle>
+                                <text class="courseNames" id="C106B" text-anchor="middle" transform="translate(136.88261308892086,488.6627720149245)" opacity="1">C106B</text>
+                            </g>
+                            <circle class="colorLegend" cx="30" cy="35" r="30" style="fill: rgb(224, 224, 224);"></circle>
+                            <circle class="colorLegend" cx="168.66666666666666" cy="35" r="30" style="fill: rgb(255, 0, 0);"></circle>
+                            <circle class="colorLegend" cx="307.3333333333333" cy="35" r="30" style="fill: rgb(255, 204, 128);"></circle>
+                            <circle class="colorLegend" cx="446" cy="35" r="30" style="fill: rgb(255, 241, 118);"></circle>
+                            <circle class="colorLegend" cx="584.6666666666666" cy="35" r="30" style="fill: rgb(159, 168, 218);"></circle>
+                            <circle class="colorLegend" cx="723.3333333333334" cy="35" r="30" style="fill: rgb(144, 202, 249);"></circle>
+                            <circle class="colorLegend" cx="862" cy="35" r="30" style="fill: rgb(128, 203, 196);"></circle>
+                            <text class="legendText" x="30" y="90" text-anchor="middle">required</text>
+                            <text class="legendText" x="168.66666666666666" y="90" text-anchor="middle">signals</text>
+                            <text class="legendText" x="307.3333333333333" y="90" text-anchor="middle">robotics</text>
+                            <text class="legendText" x="446" y="90" text-anchor="middle">circuits</text>
+                            <text class="legendText" x="584.6666666666666" y="90" text-anchor="middle">power</text>
+                            <text class="legendText" x="723.3333333333334" y="90" text-anchor="middle">devices</text>
+                            <text class="legendText" x="862" y="90" text-anchor="middle">optics</text>
+                            <g x="822" y="25" height="50" width="100">
+                                <text class="legendText" x="842" y="700" text-anchor="end">Recommended</text>
+                                <line class="highlight" x1="852" y1="696" x2="892" y2="696" marker-end="url(#end)" style="stroke-dasharray: 5, 5;"></line>
+                            </g>
+                            <g x="822" y="25" height="50" width="100">
+                                <text class="legendText" x="842" y="675" text-anchor="end">Required</text>
+                                <line class="highlight" x1="852" y1="671" x2="892" y2="671" marker-end="url(#end)"></line>
+                            </g>
+                        </svg>
+                    </div>
+                    <br>
+                    <h1>CS Course Map</h1>
+                    <div id="cs">
+                        <svg height="700" width="922">
+                            <line class="edge required" marker-end="url(#end)" x1="454.7573239476846" y1="178.06680948673255" x2="401.38191337256023" y2="237.42651766207987" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="454.7573239476846" y1="178.06680948673255" x2="506.082482973581" y2="229.51342861849554" opacity="1"></line>
+                            <line class="edge recommended" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="494.6941991730077" y2="259.411001189241" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="769.6214691829321" y2="380.0779534098073" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="455.2251519981118" y2="453.3625656652139" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="423.3738413972236" y2="341.26467874813267" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="444.19821400029076" y1="630.7055664475204" x2="399.8352958177316" y2="403.2041072013064" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="446.3020895005212" y2="320.20305288908355" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="498.6261249849242" y2="311.03931647804853" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="444.19821400029076" y1="630.7055664475204" x2="472.9093022739789" y2="382.4926555161407" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="486.67780258081405" y2="381.24795310310196" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="518.864088244398" y2="370.56841882184114" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="413.0067080776988" y2="387.93102632640023" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="445.79512982556565" y2="392.4643800450355" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="639.6093802802458" y2="339.5359681529353" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="444.19821400029076" y1="630.7055664475204" x2="652.292378671588" y2="379.9452724000371" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="677.1978726304396" y1="349.93333526386397" x2="677.7193099186172" y2="423.25688946266786" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="677.1978726304396" y1="349.93333526386397" x2="653.7167955494946" y2="543.3912866516911" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="677.1978726304396" y1="349.93333526386397" x2="639.1496831709582" y2="479.34818958313315" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="201.33640726773436" y2="409.30727972966946" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="141.46465641954228" y2="382.56137661801614" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="533.6270363248123" y1="257.12316568137203" x2="143.52285748314225" y2="387.5430133467561" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="201.04588191029234" y2="333.0121357626521" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="444.19821400029076" y1="630.7055664475204" x2="191.9861690029388" y2="374.7140990142082" opacity="1"></line>
+                            <line class="edge recommended" marker-end="url(#end)" x1="677.1978726304396" y1="349.93333526386397" x2="203.61417981722292" y2="347.16092264648455" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="164.6148480775869" y1="346.9326161379938" x2="160.74242511090193" y2="497.82427864757165" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="375.30533571738414" y1="266.42672624397755" x2="382.689485821551" y2="443.50276723624836" opacity="1"></line>
+                            <line class="edge required" marker-end="url(#end)" x1="677.1978726304396" y1="349.93333526386397" x2="729.2512081163634" y2="486.6961061607283" opacity="1"></line>
+                            <defs>
+                                <marker id="end" viewBox="0 -5 10 10" refX="0" refY="0" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+                                    <path d="M0,-5L10,0L0,5"></path>
+                                </marker>
+                            </defs>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="Chen4627" cx="100" cy="100" style="fill: rgb(229, 115, 115);" class="course"></circle>
+                                <text class="courseNames" id="Chen4627" text-anchor="middle" transform="translate(100,100)" opacity="1">EEL3000</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1"  stroke="black" stroke-width="0" id="61A" cx="454.7604475719577" cy="178.09779876369876" style="fill: rgb(229, 115, 115);" class="course"></circle>
+                                <text class="courseNames" id="61A" text-anchor="middle" transform="translate(454.7604475719577,178.09779876369876)" opacity="1">61A</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="61B" cx="375.32319612193464" cy="266.4710453189272" style="fill: rgb(229, 115, 115);" class="course highlight prereq"></circle>
+                                <text class="courseNames" id="61B" text-anchor="middle" transform="translate(375.32319612193464,266.4710453189272)" opacity="1">61B</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="61C" cx="533.6157145199805" cy="257.17213994383354" style="fill: rgb(229, 115, 115);" class="course"></circle>
+                                <text class="courseNames" id="61C" text-anchor="middle" transform="translate(533.6157145199805,257.17213994383354)" opacity="1">61C</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="70" cx="444.20662104658624" cy="630.7402390419044" style="fill: rgb(229, 115, 115);" class="course"></circle>
+                                <text class="courseNames" id="70" text-anchor="middle" transform="translate(444.20662104658624,630.7402390419044)" opacity="1">70</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="152" cx="804.2675938789123" cy="398.1456103721439" style="fill: rgb(255, 241, 118);" class="course"></circle>
+                                <text class="courseNames" id="152" text-anchor="middle" transform="translate(804.2675938789123,398.1456103721439)" opacity="1">152</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="160" cx="470.55152628546534" cy="489.21317112145056" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="160" text-anchor="middle" transform="translate(470.55152628546534,489.21317112145056)" opacity="1">160</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="161" cx="392.40520685274805" cy="364.97767707533245" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="161" text-anchor="middle" transform="translate(392.40520685274805,364.97767707533245)" opacity="1">161</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="162" cx="477.38239836223005" cy="343.81414362678817" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="162" text-anchor="middle" transform="translate(477.38239836223005,343.81414362678817)" opacity="1">162</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0"  id="164" cx="513.8049088654873" cy="409.2727320993571" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="164" text-anchor="middle" transform="translate(513.8049088654873,409.2727320993571)" opacity="1">164</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="169" cx="424.58259073579165" cy="425.2015496671665" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="169" text-anchor="middle" transform="translate(424.58259073579165,425.2015496671665)" opacity="1">169</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="170" cx="677.2280958151148" cy="349.99341256808617" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="170" text-anchor="middle" transform="translate(677.2280958151148,349.99341256808617)" opacity="1">170</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="172" cx="678.0264732246105" cy="462.31732033086496" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="172" text-anchor="middle" transform="translate(678.0264732246105,462.31732033086496)" opacity="1">172</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="174" cx="649.0619578989404" cy="582.1085950126429" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="174" text-anchor="middle" transform="translate(649.0619578989404,582.1085950126429)" opacity="1">174</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="176" cx="628.2039543964468" cy="516.7987608206129" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="176" text-anchor="middle" transform="translate(628.2039543964468,516.7987608206129)" opacity="1">176</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="184" cx="171.11251024985074" cy="434.07777351538493" style="fill: rgb(206, 147, 216);" class="course"></circle>
+                                <text class="courseNames" id="184" text-anchor="middle" transform="translate(171.11251024985074,434.07777351538493)" opacity="1">184</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="186" cx="106.48187142031118" cy="399.94382636096486" style="fill: rgb(206, 147, 216);" class="course"></circle>
+                                <text class="courseNames" id="186" text-anchor="middle" transform="translate(106.48187142031118,399.94382636096486)" opacity="1">186</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="188" cx="164.53248036687236" cy="346.9941949007283" style="fill: rgb(206, 147, 216);" class="course"></circle>
+                                <text class="courseNames" id="188" text-anchor="middle" transform="translate(164.53248036687236,346.9941949007283)" opacity="1">188</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="189" cx="159.66194478743458" cy="536.8355538201135" style="fill: rgb(206, 147, 216);" class="course"></circle>
+                                <text class="courseNames" id="189" text-anchor="middle" transform="translate(159.66194478743458,536.8355538201135)" opacity="1">189</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="168" cx="384.3527619702805" cy="482.4626632963618" style="fill: rgb(144, 202, 249);" class="course"></circle>
+                                <text class="courseNames" id="168" text-anchor="middle" transform="translate(384.3527619702805,482.4626632963618)" opacity="1">168</text>
+                            </g>
+                            <g class="nodes draggable" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" onmouseover="mouseOn()" onmouseleave="mouseOff()">
+                                <circle r="30" opacity="1" stroke="black" stroke-width="0" id="191" cx="743.1513985390004" cy="523.1762227340091" style="fill: rgb(128, 203, 196);" class="course"></circle>
+                                <text class="courseNames" id="191" text-anchor="middle" transform="translate(743.1513985390004,523.1762227340091)" opacity="1">191</text>
+                            </g>
+                            <circle class="colorLegend" cx="30" cy="35" r="30" style="fill: rgb(229, 115, 115);"></circle>
+                            <circle class="colorLegend" cx="238" cy="35" r="30" style="fill: rgb(255, 241, 118);"></circle>
+                            <circle class="colorLegend" cx="446" cy="35" r="30" style="fill: rgb(144, 202, 249);"></circle>
+                            <circle class="colorLegend" cx="654" cy="35" r="30" style="fill: rgb(128, 203, 196);"></circle>
+                            <circle class="colorLegend" cx="862" cy="35" r="30" style="fill: rgb(206, 147, 216);"></circle>
+                            <text class="legendText" x="30" y="90" text-anchor="middle">core</text>
+                            <text class="legendText" x="238" y="90" text-anchor="middle">hardware</text>
+                            <text class="legendText" x="446" y="90" text-anchor="middle">software</text>
+                            <text class="legendText" x="654" y="90" text-anchor="middle">theory</text>
+                            <text class="legendText" x="862" y="90" text-anchor="middle">applications</text>
+                            <g x="822" y="25" height="50" width="100">
+                                <text class="legendText" x="842" y="700" text-anchor="end">Recommended</text>
+                                <line class="highlight" x1="852" y1="696" x2="892" y2="696" marker-end="url(#end)" style="stroke-dasharray: 5, 5;"></line>
+                            </g>
+                            <g x="822" y="25" height="50" width="100">
+                                <text class="legendText" x="842" y="675" text-anchor="end">Required</text>
+                                <line class="highlight" x1="852" y1="671" x2="892" y2="671" marker-end="url(#end)"></line>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-right">Eta Kappa Nu, Mu Chapter</div>
+        <div id="footer-left"><a href="http://hkn.eecs.berkeley.edu/">HOME</a> | <a href="/about/contact/">CONTACT</a></div>
+    </div>
+</body>
+
+</html>
